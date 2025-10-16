@@ -1,7 +1,7 @@
 <?php
 function dd($value){
     echo "<pre>";
-    var_dump([$_SERVER]);
+    var_dump($value);
     echo "</pre>";
     die();
 }

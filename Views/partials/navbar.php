@@ -10,7 +10,8 @@
               <!-- Currtext-gray-300 ent: "bg-gray-900 text-white", Default:  hover:bg-white/5 hover:text-white" -->
               <a href="/" aria-current="page" class="<?php url('/')?> rounded-md px-3 py-2 text-sm font-medium">Home</a>
               <a href="dashboard" class="<?php url('/dashboard')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Dashboard</a>
-              <a href="projects" class="<?php url('/projects')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Projects</a>
+              <a href="projects" class="<?php url('/projects')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Projects</a>  
+              <a href="notes" class="<?php url('/notes')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Notes</a>
               <a href="about" class="<?php url('/about')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">About</a>
               <a href="contact" class="<?php url('/contact')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Contact Us</a>
             </div>

@@ -5,6 +5,8 @@ $routes = [
     '/home' => 'Controllers/indexx.php',
     '/contact' => 'Controllers/contact.php',
     '/projects' => 'Controllers/projects.php',
+    '/notes' => 'Controllers/notes.php',
+    '/note' => 'Controllers/note.php',
     '/about' => 'Controllers/about.php',
     '/dashboard' => 'Controllers/dashboard.php',
 ];
