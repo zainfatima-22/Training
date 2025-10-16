@@ -9,10 +9,10 @@
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Currtext-gray-300 ent: "bg-gray-900 text-white", Default:  hover:bg-white/5 hover:text-white" -->
               <a href="/" aria-current="page" class="<?php url('/')?> rounded-md px-3 py-2 text-sm font-medium">Home</a>
-              <a href="dashboard.php" class="<?php url('/dashboard.php')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Dashboard</a>
-              <a href="projects.php" class="<?php url('/projects.php')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Projects</a>
-              <a href="about.php" class="<?php url('/about.php')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">About</a>
-              <a href="contact.php" class="<?php url('/contact.php')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Contact Us</a>
+              <a href="dashboard" class="<?php url('/dashboard')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Dashboard</a>
+              <a href="projects" class="<?php url('/projects')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Projects</a>
+              <a href="about" class="<?php url('/about')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">About</a>
+              <a href="contact" class="<?php url('/contact')?> text-gray-300 rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Contact Us</a>
             </div>
           </div>
         </div>
