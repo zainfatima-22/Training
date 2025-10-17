@@ -1,16 +1,6 @@
 <?php
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-$routes = [
-    '/' => 'Controllers/indexx.php',
-    '/home' => 'Controllers/indexx.php',
-    '/contact' => 'Controllers/contact.php',
-    '/projects' => 'Controllers/projects.php',
-    '/notes' => 'Controllers/notes.php',
-    '/note' => 'Controllers/note.php',
-    '/about' => 'Controllers/about.php',
-    '/dashboard' => 'Controllers/dashboard.php',
-];
-
+$routes = require("routes.php");
 
 function routing($uri, $routes){
     if (array_key_exists($uri, $routes)){
