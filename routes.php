@@ -5,9 +5,9 @@ return [
     '/home' => 'Controllers/indexx.php',
     '/contact' => 'Controllers/contact.php',
     '/projects' => 'Controllers/projects.php',
-    '/notes' => 'Controllers/notes.php',
-    '/notes/create' => 'Controllers/note-create.php',
-    '/note' => 'Controllers/note.php',
+    '/notes' => 'Controllers/Notes/index.php',
+    '/notes/create' => 'Controllers/Notes/create.php',
+    '/note' => 'Controllers/Notes/show.php',
     '/about' => 'Controllers/about.php',
     '/dashboard' => 'Controllers/dashboard.php',
 ];

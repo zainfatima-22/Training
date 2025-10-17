@@ -10,6 +10,6 @@ $notes = $db -> queries("select * from Notes where ID = :id",  [
 
 authorize($notes['User'] === 1);
 
-require "Views/note-view.php";
+require "Views/Notes/show-view.php";
 
 //dd($notes);
