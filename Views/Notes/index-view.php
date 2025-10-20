@@ -58,7 +58,7 @@
                 </a>
                 
                 <!-- DELETE FORM: Added 'ml-4' for spacing and 'flex-shrink-0' to keep it fixed size -->
-                <form method="POST" action="/note" class="ml-4 flex-shrink-0">
+                <form method="POST" class="ml-4 flex-shrink-0">
                     <!-- Hidden field to identify the note to delete -->
                     <input type="hidden" name="_method" value="DELETE">
                     <input type="hidden" name="id" value="<?= htmlspecialchars($note['ID']) ?>">
@@ -92,3 +92,4 @@
   </main>
 
 <?php require "Views/partials/footer.php";?>
+

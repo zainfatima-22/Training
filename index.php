@@ -1,6 +1,6 @@
 <?php
-require "functions.php";
-require "Database.php";
-require "Response.php";
-require "routing.php";
+require "Core/functions.php";
+require "Core/Database.php";
+require "Core/Response.php";
+require "Core/routing.php";
 
