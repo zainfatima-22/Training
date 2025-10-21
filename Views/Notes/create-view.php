@@ -2,6 +2,7 @@
 <?php require base_path("Views/partials/navbar.php")?>
 <?php require base_path("Views/partials/heading.php");  ?>
 
+
   <main class="bg-gray-50 min-h-screen">
     <div class="mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:px-8">
       
@@ -62,7 +63,7 @@
                   <!-- Submit Button with Animation -->
                   <button type="submit" 
                           class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-xl 
-                                 shadow-xl text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 
+                                 shadow-xl text-white c hover:bg-indigo-700 focus:outline-none focus:ring-2 
                                  focus:ring-offset-2 focus:ring-indigo-500 active:bg-indigo-800 
                                  transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

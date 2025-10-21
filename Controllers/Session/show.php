@@ -15,29 +15,32 @@ if (!Validator::string($password, 4, 255)){
     $errors['password'] = "Password should be of correct length";
 }
 if(!empty($errors)) {
-    return view('Registration/create-view.php', [
-        'heading' => "User Registration",
+    return view('Session/create-view.php', [
+        'heading' => "User Login",
         'errors' => $errors
     ]);
 }
 
-$user = $db -> queries('select * from users where email=:email',[
+$user = $db -> queries('select * from users where email=:email' ,[
     'email' => $email
 ]) -> find();
 
 if($user){
-    header('location: /');
-    exit();
+    if (password_verify($password, $user['Password'])){
+        login([
+            'email' => $email
+        ]);
+        header('Location: /');
+        exit();   
 }
-else{
-    $db -> queries("INSERT INTO `users` (`Email`, `Password`)VALUES(:email, :password)", [
-        'email' => $email,
-        'password' => password_hash($password, PASSWORD_BCRYPT)
-    ]);
-    login($user);
-
-    header('location: /');
-    exit();
 
 }
+
+return view('Session/create-view.php', [
+    'heading' => "User Login",
+    'errors' => [
+    'email' => "No matching account found for this password. Please try again!"
+    ]
+]); 
+
 

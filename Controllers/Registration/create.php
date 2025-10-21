@@ -1,6 +1,5 @@
 <?php
 
-$heading = "User Registration";
-
-
-require "Views/Registration/create-view.php";
+view("Registration/create-view.php",[
+   'heading' => "User Registration"
+]);
