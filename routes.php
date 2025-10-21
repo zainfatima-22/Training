@@ -10,4 +10,6 @@ return [
     '/note' => 'Controllers/Notes/show.php',
     '/about' => 'Controllers/about.php',
     '/dashboard' => 'Controllers/dashboard.php',
+    '/register' => 'Controllers/Registration/create.php',
+    '/show' => 'Controllers/Registration/show.php'
 ];

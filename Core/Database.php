@@ -1,4 +1,5 @@
 <?php
+
 class Database{
     public $connection;
     public $statement;
@@ -35,7 +36,7 @@ class Database{
 
 }
 
-$config = require "config.php";
+$config = require base_path("config.php");
 $db = new Database($config['database']);
 /*
 foreach ($results as $post){

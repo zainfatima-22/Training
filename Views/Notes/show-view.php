@@ -1,6 +1,6 @@
-<?php require "Views/partials/header.php";?>
-<?php require "Views/partials/navbar.php"?>
-<?php require "Views/partials/heading.php";  ?>
+<?php require base_path("Views/partials/header.php");?>
+<?php require base_path("Views/partials/navbar.php")?>
+<?php require base_path("Views/partials/heading.php");  ?>
 
   <main class="bg-gray-50 min-h-screen pt-12">
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -106,7 +106,7 @@
               <!-- Footer/Action Section -->
               <footer class="mt-10 pt-6 border-t border-gray-100 flex justify-between items-center">
                   <!-- Hidden Delete Form (Must live outside the edit form!) -->
-                  <form id="delete-form" method="POST" action="/note" onsubmit="return confirm('Are you sure you want to delete this note?');" class="flex-shrink-0">
+                  <form id="delete-form" method="POST" onsubmit="return confirm('Are you sure you want to delete this note?');" class="flex-shrink-0">
                       <input type="hidden" name="_method" value="DELETE"> 
                       <input type="hidden" name="id" value="<?= htmlspecialchars($note['ID']) ?>">
                   </form>
@@ -129,7 +129,8 @@
     </div>     
   </main>
 
-<?php require "Views/partials/footer.php";?>
+
+<?php require base_path("Views/partials/footer.php");?> 
 <style>
 /* Simple keyframes for a subtle entrance animation */
 @keyframes fadeIn {

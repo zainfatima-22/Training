@@ -1,11 +1,9 @@
 <?php
 // This controller handles viewing (GET) and updating (POST/PATCH) a single note.
 
-require "Core/Validator.php";
-$config = require "config.php";
+require base_path("Core/Validator.php");
+$config = require base_path("config.php");
 $db = new Database($config['database']);
-
-$heading = "My Notes App";
 
 // --- 1. GET NOTE AND AUTHORIZE ---
 $id = $_GET['id'] ?? null;
@@ -65,4 +63,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 }
 
 // Pass variables needed for the view to render (either static or editable)
-require "Views/Notes/show-view.php";
+view("Notes/show-view.php",[
+   'heading' => 'My Notes App',
+   'note' => $note,
+   'body' => $body
+]);

@@ -1,13 +1,10 @@
 <?php
-require "Core/Validator.php";
-
-$config = require "config.php";
+require base_path("Core/Validator.php");
+$config = require base_path("config.php");
 $db = new Database($config['database']);
-
-$heading = "Create Note";
-
+$heading = "Create Notes";
+$errors = [];
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $errors = [];
     /*
     if(strlen($_POST['body']) === 0){
         $errors['body'] = 'A body is required';
@@ -29,4 +26,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     }
 }
 
-require "Views/Notes/create-view.php";
+view("Notes/create-view.php",[
+   'heading' => 'Create Notes',
+   'errors' => $errors
+]);

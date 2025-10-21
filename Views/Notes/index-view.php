@@ -1,6 +1,6 @@
-<?php require "Views/partials/header.php";?>
-<?php require "Views/partials/navbar.php";?>
-<?php require "Views/partials/heading.php"?>
+<?php require base_path("Views/partials/header.php");?>
+<?php require base_path("Views/partials/navbar.php")?>
+<?php require base_path("Views/partials/heading.php");  ?>
 
   <main class="bg-gray-50 min-h-screen">
     <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
@@ -91,5 +91,5 @@
     </div>     
   </main>
 
-<?php require "Views/partials/footer.php";?>
+<?php require base_path("Views/partials/footer.php");?> 
 

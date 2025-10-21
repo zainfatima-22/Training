@@ -1,8 +1,10 @@
 <?php
-require "Core/Validator.php";
-$config = require "config.php";
+
+$_SESSION['name'] = 'Zain Fatima';
+
+require base_path("Core/Validator.php");
+$config = require base_path("config.php");
 $db = new Database($config['database']);
-$heading = "Notes";
 
 
 $notes = $db -> queries("select * from Notes where user = 1") -> get();
@@ -20,5 +22,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
    }
 }
 
-require "Views/Notes/index-view.php";
+view("Notes/index-view.php",[
+   'heading' => "Notes",
+   'notes' => $notes
+]);
 
